@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELAFACT | Facturación Electrónica, Firmas & Imprenta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-white selection:text-black">
+
+    <!-- HEADER / ENCABEZADO -->
+    <header class="sticky top-0 z-50 border-b border-zinc-800 bg-black/95">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 border border-white flex items-center justify-center font-bold mono text-sm rounded">B</div>
+                <span class="mono font-bold tracking-wider text-lg">BELAFACT</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-xs mono text-zinc-400 uppercase tracking-wider">
+                <a href="#facturacion" class="hover:text-white transition">Facturación Electrónica</a>
+                <a href="#firmas" class="hover:text-white transition">Firma Electrónica</a>
+                <a href="#imprenta" class="hover:text-white transition">Imprenta Comercial</a>
+                <a href="#sellos" class="hover:text-white transition">Sellos</a>
+            </nav>
+
+            <a href="#facturacion" class="bg-white text-black px-4 py-2 text-xs mono uppercase font-semibold tracking-wider hover:bg-zinc-200 transition rounded">
+                Ver Planes
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-20 border-b border-zinc-900">
+        <div class="max-w-3xl">
+            <span class="inline-block border border-zinc-800 px-3 py-1 text-xs mono text-zinc-400 mb-6 rounded uppercase tracking-wider">
+                SRI AUTORIZADO & SERVICIOS GRÁFICOS
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                Sistemas de Facturación, Firma Electrónica e Imprenta.
+            </h1>
+            <p class="text-zinc-400 text-base md:text-lg mb-8 leading-relaxed">
+                Emisión de comprobantes autorizados por el SRI, firmas digitales en archivo .p12 y elaboración de papelería corporativa a todo color.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 1: CARDS PRECIOS FACTURACIÓN ELECTRÓNICA -->
+    <section id="facturacion" class="max-w-7xl mx-auto px-6 py-20 border-b border-zinc-900">
+        <div class="mb-12">
+            <span class="text-xs mono text-zinc-500 uppercase tracking-widest block mb-2">01 / Planes Anuales</span>
+            <h2 class="text-3xl font-bold tracking-tight">Facturación Electrónica SRI</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Plan Inicial -->
+            <div class="border border-zinc-800 rounded-lg p-8 bg-zinc-950 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs mono text-zinc-500 uppercase block mb-2">RÉGIMEN RIMPE</span>
+                    <h3 class="text-xl font-bold mb-1">Plan Emprendedor</h3>
+                    <p class="text-zinc-400 text-xs mb-6">Para pequeños negocios que inician a facturar.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono">$15.00</span>
+                        <span class="text-xs text-zinc-500 mono">/ año + IVA</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-300 space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✓ Hasta 100 Documentos/año</li>
+                        <li class="flex items-center gap-2">✓ Facturas, Retenciones y NC</li>
+                        <li class="flex items-center gap-2">✓ 1 Usuario / 1 Establecimiento</li>
+                        <li class="flex items-center gap-2">✓ Envío automático al cliente</li>
+                        <li class="flex items-center gap-2">✓ Firma digital compatible</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center border border-zinc-700 py-3 text-xs mono uppercase text-zinc-300 rounded font-medium">
+                    Seleccionar Plan
+                </div>
+            </div>
+
+            <!-- Plan MÁS VENDIDO (Destacado) -->
+            <div class="border-2 border-white rounded-lg p-8 bg-zinc-900 flex flex-col justify-between relative shadow-2xl scale-105 my-2 md:my-0">
+                <div class="absolute -top-3 right-6 bg-white text-black text-[10px] mono uppercase font-bold px-3 py-1 rounded">
+                    MÁS VENDIDO
+                </div>
+                <div>
+                    <span class="text-xs mono text-zinc-400 uppercase block mb-2">RECOMENDADO PYMES</span>
+                    <h3 class="text-xl font-bold mb-1 text-white">Plan Negocio Pro</h3>
+                    <p class="text-zinc-400 text-xs mb-6">Solución completa con inventario y reporte SRI.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono text-white">$35.00</span>
+                        <span class="text-xs text-zinc-400 mono">/ año + IVA</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-200 space-y-3 mb-8">
+                        <li class="flex items-center gap-2 font-semibold text-white">✓ Documentos Ilimitados</li>
+                        <li class="flex items-center gap-2">✓ Todos los comprobantes SRI</li>
+                        <li class="flex items-center gap-2">✓ Modulo de Inventario y Productos</li>
+                        <li class="flex items-center gap-2">✓ Reportes de Ventas y Compras</li>
+                        <li class="flex items-center gap-2">✓ Soporte Técnico Incluido</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center bg-white text-black py-3 text-xs mono uppercase font-bold rounded">
+                    Elegir Plan Pro
+                </div>
+            </div>
+
+            <!-- Plan Corporativo -->
+            <div class="border border-zinc-800 rounded-lg p-8 bg-zinc-950 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs mono text-zinc-500 uppercase block mb-2">MULTISUCURSAL</span>
+                    <h3 class="text-xl font-bold mb-1">Plan Empresarial</h3>
+                    <p class="text-zinc-400 text-xs mb-6">Para empresas con múltiples puntos de venta.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono">$65.00</span>
+                        <span class="text-xs text-zinc-500 mono">/ año + IVA</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-300 space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✓ Documentos Ilimitados</li>
+                        <li class="flex items-center gap-2">✓ Usuarios Ilimitados</li>
+                        <li class="flex items-center gap-2">✓ Multi-Establecimiento y Puntos</li>
+                        <li class="flex items-center gap-2">✓ Carga masiva de catálogo</li>
+                        <li class="flex items-center gap-2">✓ ATS Generación Automática</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center border border-zinc-700 py-3 text-xs mono uppercase text-zinc-300 rounded font-medium">
+                    Seleccionar Plan
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: CARDS FIRMA ELECTRÓNICA (3 CARDS CON 1 AÑO DESTACADA EN MEDIO) -->
+    <section id="firmas" class="max-w-7xl mx-auto px-6 py-20 border-b border-zinc-900">
+        <div class="mb-12">
+            <span class="text-xs mono text-zinc-500 uppercase tracking-widest block mb-2">02 / Emisión Digital</span>
+            <h2 class="text-3xl font-bold tracking-tight">Firma Electrónica (Archivo .p12)</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Firma 1 Año (Básica) -->
+            <div class="border border-zinc-800 rounded-lg p-8 bg-zinc-950 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs mono text-zinc-500 uppercase block mb-2">USO OCASIONAL</span>
+                    <h3 class="text-xl font-bold mb-1">1 Año Estándar</h3>
+                    <p class="text-zinc-400 text-xs mb-6">Para trámites puntuales o prueba de sistema.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono">$18.00</span>
+                        <span class="text-xs text-zinc-500 mono">/ IVA Inc.</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-300 space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✓ Archivo .p12 válido para SRI</li>
+                        <li class="flex items-center gap-2">✓ Persona Natural o Jurídica</li>
+                        <li class="flex items-center gap-2">✓ Emisión el mismo día</li>
+                        <li class="flex items-center gap-2">✓ Compatible con cualquier sistema</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center border border-zinc-700 py-3 text-xs mono uppercase text-zinc-300 rounded font-medium">
+                    Solicitar Firma
+                </div>
+            </div>
+
+            <!-- Firma 1 Año PRO (MÁS SOLICITADA - DESTACADA EN MEDIO) -->
+            <div class="border-2 border-white rounded-lg p-8 bg-zinc-900 flex flex-col justify-between relative shadow-2xl scale-105 my-2 md:my-0">
+                <div class="absolute -top-3 right-6 bg-white text-black text-[10px] mono uppercase font-bold px-3 py-1 rounded">
+                    MÁS SOLICITADA
+                </div>
+                <div>
+                    <span class="text-xs mono text-zinc-400 uppercase block mb-2">RECOMENDADO SRI</span>
+                    <h3 class="text-xl font-bold mb-1 text-white">Firma 1 Año Pro</h3>
+                    <p class="text-zinc-400 text-xs mb-6">La opción más requerida para facturación activa.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono text-white">$18.00</span>
+                        <span class="text-xs text-zinc-400 mono">/ IVA Inc.</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-200 space-y-3 mb-8">
+                        <li class="flex items-center gap-2 font-semibold text-white">✓ Archivo .p12 para SRI y Quipux</li>
+                        <li class="flex items-center gap-2">✓ Emisión express inmediata</li>
+                        <li class="flex items-center gap-2">✓ Soporte e instalación remota gratis</li>
+                        <li class="flex items-center gap-2">✓ Válida para contratos y facturas</li>
+                        <li class="flex items-center gap-2">✓ Asesoría de uso en sistema</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center bg-white text-black py-3 text-xs mono uppercase font-bold rounded">
+                    Obtener Firma 1 Año
+                </div>
+            </div>
+
+            <!-- Firma 2 Años -->
+            <div class="border border-zinc-800 rounded-lg p-8 bg-zinc-950 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs mono text-zinc-500 uppercase block mb-2">MAYOR DURACIÓN</span>
+                    <h3 class="text-xl font-bold mb-1">Firma 2 Años</h3>
+                    <p class="text-zinc-400 text-xs mb-6">Ahorra tiempo evitando la renovación anual.</p>
+                    
+                    <div class="mb-6 pb-6 border-b border-zinc-800">
+                        <span class="text-4xl font-bold mono">$28.00</span>
+                        <span class="text-xs text-zinc-500 mono">/ IVA Inc.</span>
+                    </div>
+
+                    <ul class="text-xs mono text-zinc-300 space-y-3 mb-8">
+                        <li class="flex items-center gap-2">✓ Archivo .p12 válido para SRI</li>
+                        <li class="flex items-center gap-2">✓ Vigencia extendida por 24 meses</li>
+                        <li class="flex items-center gap-2">✓ Persona Natural o Jurídica</li>
+                        <li class="flex items-center gap-2">✓ Soporte e instalación incluida</li>
+                    </ul>
+                </div>
+                <div class="w-full text-center border border-zinc-700 py-3 text-xs mono uppercase text-zinc-300 rounded font-medium">
+                    Solicitar 2 Años
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: IMPRENTA COMERCIAL (IMÁGENES A COLOR) -->
+    <section id="imprenta" class="max-w-7xl mx-auto px-6 py-20 border-b border-zinc-900">
+        <div class="mb-12">
+            <span class="text-xs mono text-zinc-500 uppercase tracking-widest block mb-2">03 / Productos Publicitarios</span>
+            <h2 class="text-3xl font-bold tracking-tight">Imprenta Comercial a Todo Color</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Jarros Personalizados -->
+            <div class="border border-zinc-800 rounded-lg bg-zinc-950 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-52 overflow-hidden border-b border-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" 
+                             alt="Jarros Personalizados a Color" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jarros Personalizados</h3>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                            Sublimación full color de alta definición. Jarros corporativos blancos, mágicos y de vidrio mate.
+                        </p>
+                        <div class="text-sm font-bold mono text-white">Desde $5.00 / Unidad</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjetas de Presentación -->
+            <div class="border border-zinc-800 rounded-lg bg-zinc-950 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-52 overflow-hidden border-b border-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop" 
+                             alt="Tarjetas de Presentación a Color" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tarjetas de Presentación</h3>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                            Impresión tiro y retiro a todo color, papel couché de 300g, plastificado mate y esquinas redondeadas.
+                        </p>
+                        <div class="text-sm font-bold mono text-white">Desde $25.00 / 1000 Unid.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flyers y Volantes -->
+            <div class="border border-zinc-800 rounded-lg bg-zinc-950 overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-52 overflow-hidden border-b border-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" 
+                             alt="Flyers Publicitarios a Color" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Flyers & Volantes</h3>
+                        <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                            Impresión offset en papel brillante para campañas publicitarias, eventos y promociones masivas.
+                        </p>
+                        <div class="text-sm font-bold mono text-white">Desde $30.00 / 1000 Unid.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: SELLOS AUTOMÁTICOS -->
+    <section id="sellos" class="max-w-7xl mx-auto px-6 py-20 border-b border-zinc-900">
+        <div class="mb-12">
+            <span class="text-xs mono text-zinc-500 uppercase tracking-widest block mb-2">04 / Sellado Profesional</span>
+            <h2 class="text-3xl font-bold tracking-tight">Sellos Automáticos Trodat / Shiny</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-950">
+                <h3 class="text-lg font-bold mb-1">Sellos Rectangulares</h3>
+                <p class="text-zinc-400 text-xs mb-4">Para RUC, datos de empresa y firmas de autorización.</p>
+                <div class="text-xl font-bold mono text-white mb-2">$14.00 USD</div>
+                <span class="text-[10px] mono text-zinc-500 uppercase">Incluye aparato + goma láser</span>
+            </div>
+
+            <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-950">
+                <h3 class="text-lg font-bold mb-1">Sellos Redondos / Ovalados</h3>
+                <p class="text-zinc-400 text-xs mb-4">Para logotipos, escudos corporativos e instituciones.</p>
+                <div class="text-xl font-bold mono text-white mb-2">$18.00 USD</div>
+                <span class="text-[10px] mono text-zinc-500 uppercase">Incluye aparato + goma láser</span>
+            </div>
+
+            <div class="border border-zinc-800 rounded-lg p-6 bg-zinc-950">
+                <h3 class="text-lg font-bold mb-1">Sellos de Bolsillo</h3>
+                <p class="text-zinc-400 text-xs mb-4">Portátiles y compactos para médicos, ingenieros y visitas.</p>
+                <div class="text-xl font-bold mono text-white mb-2">$16.00 USD</div>
+                <span class="text-[10px] mono text-zinc-500 uppercase">Incluye aparato + goma láser</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center text-xs mono text-zinc-500">
+        <p>&copy; 2026 BELAFACT. Soluciones Gráficas y Facturación Electrónica. Quito, Ecuador.</p>
+    </footer>
+
+</body>
+</html>
